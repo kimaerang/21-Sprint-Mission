@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입 | 판다마켓</title>
+  <link href="resources/css/style.css" rel="stylesheet" />
+</head>
+<body>
+<main id="main" class="main login">
+  <div class="login-wrap">
+    <h1 class="header-logo"><a href="index.html">판다마켓</a></h1>
+    <form action="">
+      <div class="input-box">
+        <label for="email-input" class="txt-label">이메일</label>
+        <input type="email" class="common-input" id="email-input" name="email" required placeholder="example@panda.com">
+      </div>
+      <div class="input-box">
+        <label for="nickname-input" class="txt-label">닉네임</label>
+        <input type="text" class="common-input" id="nickname-input" name="nickname" placeholder="판다">
+      </div>
+      <div class="input-box">
+        <label for="password-input" class="txt-label">비밀번호</label>
+        <input type="password" class="common-input" id="password-input" name="password" required autocomplete="password">
+        <button type="button" id="pw-hide" class="btn-pw-view"><span class="read-only">비밀번호 보임</span></button>
+      </div>
+      <div class="input-box">
+        <label for="confirm-password" class="txt-label">비밀번호 확인</label>
+        <input type="password" class="common-input" id="confirm-password" name="confirm-password" required autocomplete="password">
+        <button type="button" id="pw-hide" class="btn-pw-view hide"><span class="read-only">비밀번호 안보임</span></button>
+      </div>
+      <button type="submit" class="btn-login">로그인</button>
+      <div class="login-sns-area">
+        <h2>간편 로그인하기</h2>
+        <div class="btn-sns">
+          <a href="https://www.google.com/" target="_blank">구글</a>
+        <a href="https://www.kakaocorp.com/page/" target="_blank">카카오톡</a>
+        </div>
+      </div>
+      <div class="login-join-area">
+        <span>이미 회원이신가요? <a href="login.html">로그인</a></span>
+      </div>
+    </form>
+  </div>
+</main>
+</div> 
+</body>
+</html>

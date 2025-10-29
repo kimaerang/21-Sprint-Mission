@@ -1,0 +1,30 @@
+/* reset */
+
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+*:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
+html { scroll-behavior: smooth; overscroll-behavior: none; font-size:62.5%; } 
+body { 
+    -webkit-text-size-adjust: none; 
+    font-weight: 400; 
+    line-height: 1.6; 
+    font-size: 1.6rem; 
+    letter-spacing: -0.1px; 
+    font-family: "Pretendard", "Malgun Gothic", "맑은 고딕", sans-serif; 
+    color: #151515; 
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button, figure, figcaption { margin: 0; padding: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ul, ol, li, th, td { list-style: none; }
+em { font-style: normal; }
+button { border: 0 none; background-color: transparent; cursor: pointer; font-size: 1.6rem; font-family: inherit; color: #151515; }
+table { border-collapse: collapse; border-spacing: 0; }
+input, textarea { appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; border:none}
+caption { z-index: -1; display: block; border: 0; margin: -1px; clip: rect(1px, 1px, 1px, 1px); position: absolute !important; top: auto; left: -10000px; width: 1px; height: 1px; overflow: hidden; text-indent: -9999px; }
+legend { z-index: -1; overflow: hidden; display: inline-block; position: absolute; border: 0; width: 0; height: 0; font-size: 0; clip: rect(1px, 1px, 1px, 1px); -webkit-clip-path: inset(50%); clip-path: inset(50%); }
+select { font-family: inherit; background: transparent; appearance: none; -webkit-appearance: none; }
+select::-ms-expand { display: none; }
+textarea { font-size: 100%; background: #fff; appearance: none; -webkit-appearance: none; border-radius: 0; }
+img { width: 100%; height: auto; border: 0 none; vertical-align: middle; }
+a {text-decoration: none; color: inherit;}
+a:hover, a:focus { text-decoration: none; }
+.read-only {position: absolute; clip: rect(0 0 0 0); width:1px; height:1px; margin:-1px; overflow: hidden;}
