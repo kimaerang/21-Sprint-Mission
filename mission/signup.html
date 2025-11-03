@@ -7,29 +7,29 @@
   <link href="resources/css/style.css" rel="stylesheet" />
 </head>
 <body>
-<main id="main" class="main login">
+<main id="main" class="main signup">
   <div class="login-wrap">
     <h1 class="header-logo"><a href="index.html">판다마켓</a></h1>
     <form action="">
       <div class="input-box">
         <label for="email-input" class="txt-label">이메일</label>
-        <input type="email" class="common-input" id="email-input" name="email" required placeholder="example@panda.com">
+        <input type="email" class="common-input" id="email-input" name="email" required placeholder="이메일을 입력해주세요">
       </div>
       <div class="input-box">
         <label for="nickname-input" class="txt-label">닉네임</label>
-        <input type="text" class="common-input" id="nickname-input" name="nickname" placeholder="판다">
+        <input type="text" class="common-input" id="nickname-input" name="nickname" placeholder="닉네임을 입력해주세요">
       </div>
       <div class="input-box">
         <label for="password-input" class="txt-label">비밀번호</label>
-        <input type="password" class="common-input" id="password-input" name="password" required autocomplete="password">
+        <input type="password" class="common-input" id="password-input" name="password" required autocomplete="password" placeholder="비밀번호를 입력해주세요">
         <button type="button" id="pw-hide" class="btn-pw-view"><span class="read-only">비밀번호 보임</span></button>
       </div>
       <div class="input-box">
         <label for="confirm-password" class="txt-label">비밀번호 확인</label>
-        <input type="password" class="common-input" id="confirm-password" name="confirm-password" required autocomplete="password">
+        <input type="password" class="common-input" id="confirm-password" name="confirm-password" required autocomplete="password" placeholder="비밀번호를 다시 한 번 입력해주세요">
         <button type="button" id="pw-hide" class="btn-pw-view hide"><span class="read-only">비밀번호 안보임</span></button>
       </div>
-      <button type="submit" class="btn-login">로그인</button>
+      <button type="submit" class="btn-login disabled">회원가입</button>
       <div class="login-sns-area">
         <h2>간편 로그인하기</h2>
         <div class="btn-sns">
