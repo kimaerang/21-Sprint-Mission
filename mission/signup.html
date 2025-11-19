@@ -4,30 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회원가입 | 판다마켓</title>
-  <link href="resources/css/style.css" rel="stylesheet" />
+  <link href="resources/css/common.css" rel="stylesheet" />
+  <link href="resources/css/auth.css" rel="stylesheet" />
 </head>
 <body>
 <main id="main" class="main signup">
   <div class="login-wrap">
     <h1 class="header-logo"><a href="index.html">판다마켓</a></h1>
-    <form action="">
+    <form action="" id="signupForm">
       <div class="input-box">
         <label for="email-input" class="txt-label">이메일</label>
-        <input type="email" class="common-input" id="email-input" name="email" required placeholder="이메일을 입력해주세요">
+        <input 
+          type="email" 
+          class="common-input" 
+          id="email-input" 
+          name="email" 
+          required 
+          placeholder="이메일을 입력해주세요">
+          <p id="email-error" class="error-msg"></p>
       </div>
       <div class="input-box">
         <label for="nickname-input" class="txt-label">닉네임</label>
         <input type="text" class="common-input" id="nickname-input" name="nickname" placeholder="닉네임을 입력해주세요">
+        <p id="nickname-error" class="error-msg"></p>
       </div>
       <div class="input-box">
         <label for="password-input" class="txt-label">비밀번호</label>
-        <input type="password" class="common-input" id="password-input" name="password" required autocomplete="password" placeholder="비밀번호를 입력해주세요">
-        <button type="button" id="pw-hide" class="btn-pw-view"><span class="read-only">비밀번호 보임</span></button>
+        <div class="pwd-box">
+          <input 
+            type="password" 
+            class="common-input" 
+            id="password-input" 
+            name="password" 
+            required 
+            placeholder="비밀번호를 입력해주세요"
+            minlength="8">
+          <button type="button" id="pw-hide" class="btn-pw-view"><span class="read-only">비밀번호 보임</span></button>
+        </div>
+        <p id="password-error" class="error-msg"></p>
       </div>
       <div class="input-box">
         <label for="confirm-password" class="txt-label">비밀번호 확인</label>
-        <input type="password" class="common-input" id="confirm-password" name="confirm-password" required autocomplete="password" placeholder="비밀번호를 다시 한 번 입력해주세요">
-        <button type="button" id="pw-hide" class="btn-pw-view hide"><span class="read-only">비밀번호 안보임</span></button>
+        <div class="pwd-box">
+          <input 
+            type="password" 
+            class="common-input" 
+            id="confirm-password" 
+            name="confirm-password" 
+            required 
+            placeholder="비밀번호를 다시 한 번 입력해주세요"
+            minlength="8">
+          <button type="button" id="pw-hide" class="btn-pw-view hide"><span class="read-only">비밀번호 안보임</span></button>
+         </div>
+         <p id="confirm-password-error" class="error-msg"></p> 
       </div>
       <button type="submit" class="btn-login disabled">회원가입</button>
       <div class="login-sns-area">
@@ -44,5 +73,6 @@
   </div>
 </main>
 </div> 
+<script type="module" src="resources/js/signup.js"></script>
 </body>
 </html>

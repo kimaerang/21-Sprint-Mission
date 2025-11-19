@@ -367,7 +367,16 @@ input:-ms-input-placeholder{
     color:var(--primary-color); 
     text-decoration: underline;
 }
+.common-input.error {
+    border: 1px solid red;
+}
 
+.error-msg {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 20px;
+}
 
 /* Tablet */
 @media (max-width: 1199px) {
