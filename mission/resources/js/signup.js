@@ -8,6 +8,7 @@ const passwordInput = document.getElementById('password-input');
 const confirmPasswordInput = document.getElementById('confirm-password');
 const emailError = document.getElementById('email-error');
 const nicknameError = document.getElementById('nickname-error');
+const passwordError = document.getElementById('password-error'); 
 const confirmPasswordError = document.getElementById('confirm-password-error');
 const signupButton = document.querySelector('.btn-login');
 const pwHideButtons = document.querySelectorAll('.btn-pw-view');
